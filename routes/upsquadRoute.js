@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const Events = require('../models/Events');
 
-//get all formula return type
+//get all getEvents
 router.get('/getEvents', async (req, res) => {
 	try {
 		const getEvents = await Events.find();
